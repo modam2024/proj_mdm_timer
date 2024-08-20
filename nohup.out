@@ -52,47 +52,47 @@ Stacktrace:
 meaning of bizarre is completed(2)
 Internal Server Error: /article/confirm-wordcheck/
 Traceback (most recent call last):
-  File "/root/pyDjangoDEV/mdmproj1/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+  File "/root/pyDjangoDEV/proj_mdm_timer/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
     response = get_response(request)
-  File "/root/pyDjangoDEV/mdmproj1/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+  File "/root/pyDjangoDEV/proj_mdm_timer/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
     response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/root/pyDjangoDEV/mdmproj1/.venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+  File "/root/pyDjangoDEV/proj_mdm_timer/.venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
     return view_func(*args, **kwargs)
-  File "/root/pyDjangoDEV/mdmproj1/.venv/lib/python3.10/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+  File "/root/pyDjangoDEV/proj_mdm_timer/.venv/lib/python3.10/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
     return view_func(request, *args, **kwargs)
-  File "/root/pyDjangoDEV/mdmproj1/article/views.py", line 788, in confirm_word_check
+  File "/root/pyDjangoDEV/proj_mdm_timer/article/views.py", line 788, in confirm_word_check
     close_connection(conn, cursor)
-  File "/root/pyDjangoDEV/mdmproj1/mdl_sql_mapping/__init__.py", line 19, in close_connection
+  File "/root/pyDjangoDEV/proj_mdm_timer/mdl_sql_mapping/__init__.py", line 19, in close_connection
     conn.commit()
-  File "/root/pyDjangoDEV/mdmproj1/.venv/lib/python3.10/site-packages/mysql/connector/connection_cext.py", line 517, in commit
+  File "/root/pyDjangoDEV/proj_mdm_timer/.venv/lib/python3.10/site-packages/mysql/connector/connection_cext.py", line 517, in commit
     self._cmysql.commit()
 _mysql_connector.MySQLInterfaceError: MySQL server has gone away
 Internal Server Error: /article/create-word/
 Traceback (most recent call last):
-  File "/root/pyDjangoDEV/mdmproj1/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+  File "/root/pyDjangoDEV/proj_mdm_timer/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
     response = get_response(request)
-  File "/root/pyDjangoDEV/mdmproj1/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 204, in _get_response
+  File "/root/pyDjangoDEV/proj_mdm_timer/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 204, in _get_response
     self.check_response(response, callback)
-  File "/root/pyDjangoDEV/mdmproj1/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 332, in check_response
+  File "/root/pyDjangoDEV/proj_mdm_timer/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 332, in check_response
     raise ValueError(
 ValueError: The view article.views.create_word didn't return an HttpResponse object. It returned None instead.
 meaning of bizarre is completed(1)
 meaning of irk is completed(2)
 Internal Server Error: /article/confirm-wordcheck/
 Traceback (most recent call last):
-  File "/root/pyDjangoDEV/mdmproj1/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+  File "/root/pyDjangoDEV/proj_mdm_timer/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
     response = get_response(request)
-  File "/root/pyDjangoDEV/mdmproj1/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+  File "/root/pyDjangoDEV/proj_mdm_timer/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
     response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/root/pyDjangoDEV/mdmproj1/.venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+  File "/root/pyDjangoDEV/proj_mdm_timer/.venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
     return view_func(*args, **kwargs)
-  File "/root/pyDjangoDEV/mdmproj1/.venv/lib/python3.10/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+  File "/root/pyDjangoDEV/proj_mdm_timer/.venv/lib/python3.10/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
     return view_func(request, *args, **kwargs)
-  File "/root/pyDjangoDEV/mdmproj1/article/views.py", line 788, in confirm_word_check
+  File "/root/pyDjangoDEV/proj_mdm_timer/article/views.py", line 788, in confirm_word_check
     close_connection(conn, cursor)
-  File "/root/pyDjangoDEV/mdmproj1/mdl_sql_mapping/__init__.py", line 19, in close_connection
+  File "/root/pyDjangoDEV/proj_mdm_timer/mdl_sql_mapping/__init__.py", line 19, in close_connection
     conn.commit()
-  File "/root/pyDjangoDEV/mdmproj1/.venv/lib/python3.10/site-packages/mysql/connector/connection_cext.py", line 517, in commit
+  File "/root/pyDjangoDEV/proj_mdm_timer/.venv/lib/python3.10/site-packages/mysql/connector/connection_cext.py", line 517, in commit
     self._cmysql.commit()
 _mysql_connector.MySQLInterfaceError: MySQL server has gone away
 meaning of cordially is completed(1)
@@ -102,19 +102,19 @@ meaning of operatic is completed(2)
 meaning of rajjles is completed(1)
 Internal Server Error: /article/confirm-wordcheck/
 Traceback (most recent call last):
-  File "/root/pyDjangoDEV/mdmproj1/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+  File "/root/pyDjangoDEV/proj_mdm_timer/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
     response = get_response(request)
-  File "/root/pyDjangoDEV/mdmproj1/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+  File "/root/pyDjangoDEV/proj_mdm_timer/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
     response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/root/pyDjangoDEV/mdmproj1/.venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+  File "/root/pyDjangoDEV/proj_mdm_timer/.venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
     return view_func(*args, **kwargs)
-  File "/root/pyDjangoDEV/mdmproj1/.venv/lib/python3.10/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+  File "/root/pyDjangoDEV/proj_mdm_timer/.venv/lib/python3.10/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
     return view_func(request, *args, **kwargs)
-  File "/root/pyDjangoDEV/mdmproj1/article/views.py", line 788, in confirm_word_check
+  File "/root/pyDjangoDEV/proj_mdm_timer/article/views.py", line 788, in confirm_word_check
     close_connection(conn, cursor)
-  File "/root/pyDjangoDEV/mdmproj1/mdl_sql_mapping/__init__.py", line 19, in close_connection
+  File "/root/pyDjangoDEV/proj_mdm_timer/mdl_sql_mapping/__init__.py", line 19, in close_connection
     conn.commit()
-  File "/root/pyDjangoDEV/mdmproj1/.venv/lib/python3.10/site-packages/mysql/connector/connection_cext.py", line 517, in commit
+  File "/root/pyDjangoDEV/proj_mdm_timer/.venv/lib/python3.10/site-packages/mysql/connector/connection_cext.py", line 517, in commit
     self._cmysql.commit()
 _mysql_connector.MySQLInterfaceError: MySQL server has gone away
 do_insert_page_info insert failed: 1062 (23000): Duplicate entry '4781-polomono' for key 'PRIMARY'
@@ -207,19 +207,19 @@ meaning of finer is completed(2)
 meaning of hygiene is completed(1)
 Internal Server Error: /article/confirm-wordcheck/
 Traceback (most recent call last):
-  File "/root/pyDjangoDEV/mdmproj1/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+  File "/root/pyDjangoDEV/proj_mdm_timer/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
     response = get_response(request)
-  File "/root/pyDjangoDEV/mdmproj1/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+  File "/root/pyDjangoDEV/proj_mdm_timer/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
     response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/root/pyDjangoDEV/mdmproj1/.venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+  File "/root/pyDjangoDEV/proj_mdm_timer/.venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
     return view_func(*args, **kwargs)
-  File "/root/pyDjangoDEV/mdmproj1/.venv/lib/python3.10/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+  File "/root/pyDjangoDEV/proj_mdm_timer/.venv/lib/python3.10/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
     return view_func(request, *args, **kwargs)
-  File "/root/pyDjangoDEV/mdmproj1/article/views.py", line 788, in confirm_word_check
+  File "/root/pyDjangoDEV/proj_mdm_timer/article/views.py", line 788, in confirm_word_check
     close_connection(conn, cursor)
-  File "/root/pyDjangoDEV/mdmproj1/mdl_sql_mapping/__init__.py", line 19, in close_connection
+  File "/root/pyDjangoDEV/proj_mdm_timer/mdl_sql_mapping/__init__.py", line 19, in close_connection
     conn.commit()
-  File "/root/pyDjangoDEV/mdmproj1/.venv/lib/python3.10/site-packages/mysql/connector/connection_cext.py", line 517, in commit
+  File "/root/pyDjangoDEV/proj_mdm_timer/.venv/lib/python3.10/site-packages/mysql/connector/connection_cext.py", line 517, in commit
     self._cmysql.commit()
 _mysql_connector.MySQLInterfaceError: MySQL server has gone away
 Django Server Started
@@ -433,25 +433,25 @@ Stacktrace:
 response completed2
 Internal Server Error: /news_study/
 Traceback (most recent call last):
-  File "/root/pyDjangoDEV/mdmproj1/.venw/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+  File "/root/pyDjangoDEV/proj_mdm_timer/.venw/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
     response = get_response(request)
-  File "/root/pyDjangoDEV/mdmproj1/.venw/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+  File "/root/pyDjangoDEV/proj_mdm_timer/.venw/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
     response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/root/pyDjangoDEV/mdmproj1/app_news_study/views.py", line 32, in news_study
+  File "/root/pyDjangoDEV/proj_mdm_timer/app_news_study/views.py", line 32, in news_study
     html, soup = proj_comn_func.url_parsing_with_webdriver(url, "1")
-  File "/root/pyDjangoDEV/mdmproj1/proj_common/common.py", line 45, in url_parsing_with_webdriver
+  File "/root/pyDjangoDEV/proj_mdm_timer/proj_common/common.py", line 45, in url_parsing_with_webdriver
     driver = webdriver.Chrome(service=service, options=options)
-  File "/root/pyDjangoDEV/mdmproj1/.venw/lib/python3.8/site-packages/selenium/webdriver/chrome/webdriver.py", line 45, in __init__
+  File "/root/pyDjangoDEV/proj_mdm_timer/.venw/lib/python3.8/site-packages/selenium/webdriver/chrome/webdriver.py", line 45, in __init__
     super().__init__(
-  File "/root/pyDjangoDEV/mdmproj1/.venw/lib/python3.8/site-packages/selenium/webdriver/chromium/webdriver.py", line 61, in __init__
+  File "/root/pyDjangoDEV/proj_mdm_timer/.venw/lib/python3.8/site-packages/selenium/webdriver/chromium/webdriver.py", line 61, in __init__
     super().__init__(command_executor=executor, options=options)
-  File "/root/pyDjangoDEV/mdmproj1/.venw/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 209, in __init__
+  File "/root/pyDjangoDEV/proj_mdm_timer/.venw/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 209, in __init__
     self.start_session(capabilities)
-  File "/root/pyDjangoDEV/mdmproj1/.venw/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 293, in start_session
+  File "/root/pyDjangoDEV/proj_mdm_timer/.venw/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 293, in start_session
     response = self.execute(Command.NEW_SESSION, caps)["value"]
-  File "/root/pyDjangoDEV/mdmproj1/.venw/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 348, in execute
+  File "/root/pyDjangoDEV/proj_mdm_timer/.venw/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 348, in execute
     self.error_handler.check_response(response)
-  File "/root/pyDjangoDEV/mdmproj1/.venw/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 229, in check_response
+  File "/root/pyDjangoDEV/proj_mdm_timer/.venw/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 229, in check_response
     raise exception_class(message, screen, stacktrace)
 selenium.common.exceptions.SessionNotCreatedException: Message: session not created
 from disconnected: unable to connect to renderer
@@ -477,27 +477,27 @@ Stacktrace:
 
 Internal Server Error: /news_study/
 Traceback (most recent call last):
-  File "/root/pyDjangoDEV/mdmproj1/.venw/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+  File "/root/pyDjangoDEV/proj_mdm_timer/.venw/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
     response = get_response(request)
-  File "/root/pyDjangoDEV/mdmproj1/.venw/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+  File "/root/pyDjangoDEV/proj_mdm_timer/.venw/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
     response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/root/pyDjangoDEV/mdmproj1/app_news_study/views.py", line 57, in news_study
+  File "/root/pyDjangoDEV/proj_mdm_timer/app_news_study/views.py", line 57, in news_study
     list_keyitems = app_comn_func.get_url_keyitems(link)
-  File "/root/pyDjangoDEV/mdmproj1/app_news_study/app_mdl_common/common.py", line 62, in get_url_keyitems
+  File "/root/pyDjangoDEV/proj_mdm_timer/app_news_study/app_mdl_common/common.py", line 62, in get_url_keyitems
     html, soup = proj_comn_func.url_parsing_with_webdriver(url, "3")
-  File "/root/pyDjangoDEV/mdmproj1/proj_common/common.py", line 45, in url_parsing_with_webdriver
+  File "/root/pyDjangoDEV/proj_mdm_timer/proj_common/common.py", line 45, in url_parsing_with_webdriver
     driver = webdriver.Chrome(service=service, options=options)
-  File "/root/pyDjangoDEV/mdmproj1/.venw/lib/python3.8/site-packages/selenium/webdriver/chrome/webdriver.py", line 45, in __init__
+  File "/root/pyDjangoDEV/proj_mdm_timer/.venw/lib/python3.8/site-packages/selenium/webdriver/chrome/webdriver.py", line 45, in __init__
     super().__init__(
-  File "/root/pyDjangoDEV/mdmproj1/.venw/lib/python3.8/site-packages/selenium/webdriver/chromium/webdriver.py", line 61, in __init__
+  File "/root/pyDjangoDEV/proj_mdm_timer/.venw/lib/python3.8/site-packages/selenium/webdriver/chromium/webdriver.py", line 61, in __init__
     super().__init__(command_executor=executor, options=options)
-  File "/root/pyDjangoDEV/mdmproj1/.venw/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 209, in __init__
+  File "/root/pyDjangoDEV/proj_mdm_timer/.venw/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 209, in __init__
     self.start_session(capabilities)
-  File "/root/pyDjangoDEV/mdmproj1/.venw/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 293, in start_session
+  File "/root/pyDjangoDEV/proj_mdm_timer/.venw/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 293, in start_session
     response = self.execute(Command.NEW_SESSION, caps)["value"]
-  File "/root/pyDjangoDEV/mdmproj1/.venw/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 348, in execute
+  File "/root/pyDjangoDEV/proj_mdm_timer/.venw/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 348, in execute
     self.error_handler.check_response(response)
-  File "/root/pyDjangoDEV/mdmproj1/.venw/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 229, in check_response
+  File "/root/pyDjangoDEV/proj_mdm_timer/.venw/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 229, in check_response
     raise exception_class(message, screen, stacktrace)
 selenium.common.exceptions.SessionNotCreatedException: Message: session not created
 from disconnected: unable to connect to renderer
@@ -523,27 +523,27 @@ Stacktrace:
 
 Internal Server Error: /news_study/
 Traceback (most recent call last):
-  File "/root/pyDjangoDEV/mdmproj1/.venw/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+  File "/root/pyDjangoDEV/proj_mdm_timer/.venw/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
     response = get_response(request)
-  File "/root/pyDjangoDEV/mdmproj1/.venw/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+  File "/root/pyDjangoDEV/proj_mdm_timer/.venw/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
     response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/root/pyDjangoDEV/mdmproj1/app_news_study/views.py", line 57, in news_study
+  File "/root/pyDjangoDEV/proj_mdm_timer/app_news_study/views.py", line 57, in news_study
     list_keyitems = app_comn_func.get_url_keyitems(link)
-  File "/root/pyDjangoDEV/mdmproj1/app_news_study/app_mdl_common/common.py", line 62, in get_url_keyitems
+  File "/root/pyDjangoDEV/proj_mdm_timer/app_news_study/app_mdl_common/common.py", line 62, in get_url_keyitems
     html, soup = proj_comn_func.url_parsing_with_webdriver(url, "3")
-  File "/root/pyDjangoDEV/mdmproj1/proj_common/common.py", line 45, in url_parsing_with_webdriver
+  File "/root/pyDjangoDEV/proj_mdm_timer/proj_common/common.py", line 45, in url_parsing_with_webdriver
     driver = webdriver.Chrome(service=service, options=options)
-  File "/root/pyDjangoDEV/mdmproj1/.venw/lib/python3.8/site-packages/selenium/webdriver/chrome/webdriver.py", line 45, in __init__
+  File "/root/pyDjangoDEV/proj_mdm_timer/.venw/lib/python3.8/site-packages/selenium/webdriver/chrome/webdriver.py", line 45, in __init__
     super().__init__(
-  File "/root/pyDjangoDEV/mdmproj1/.venw/lib/python3.8/site-packages/selenium/webdriver/chromium/webdriver.py", line 61, in __init__
+  File "/root/pyDjangoDEV/proj_mdm_timer/.venw/lib/python3.8/site-packages/selenium/webdriver/chromium/webdriver.py", line 61, in __init__
     super().__init__(command_executor=executor, options=options)
-  File "/root/pyDjangoDEV/mdmproj1/.venw/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 209, in __init__
+  File "/root/pyDjangoDEV/proj_mdm_timer/.venw/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 209, in __init__
     self.start_session(capabilities)
-  File "/root/pyDjangoDEV/mdmproj1/.venw/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 293, in start_session
+  File "/root/pyDjangoDEV/proj_mdm_timer/.venw/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 293, in start_session
     response = self.execute(Command.NEW_SESSION, caps)["value"]
-  File "/root/pyDjangoDEV/mdmproj1/.venw/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 348, in execute
+  File "/root/pyDjangoDEV/proj_mdm_timer/.venw/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 348, in execute
     self.error_handler.check_response(response)
-  File "/root/pyDjangoDEV/mdmproj1/.venw/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 229, in check_response
+  File "/root/pyDjangoDEV/proj_mdm_timer/.venw/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 229, in check_response
     raise exception_class(message, screen, stacktrace)
 selenium.common.exceptions.SessionNotCreatedException: Message: session not created
 from disconnected: unable to connect to renderer

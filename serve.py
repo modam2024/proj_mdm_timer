@@ -1,5 +1,5 @@
 from waitress import serve
-from mdmproj1.wsgi import application
+from proj_mdm_timer.wsgi import application
 
 print("Django Server Started")
 
