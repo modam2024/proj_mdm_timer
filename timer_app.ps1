@@ -1,7 +1,7 @@
 # PowerShell
 
 # both_repo means repo_origin_ubuntu.git
-cd ~/pyDjangoDEV/mdmproj1
+Set-Location C:\pyDjangoDEV\proj_mdm_timer
 
 # 원격 리포지토리 정보 갱신
 Write-Host "Fetching latest changes from the both_repo..."
