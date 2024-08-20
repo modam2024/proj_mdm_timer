@@ -220,9 +220,9 @@ def get_recent_news_date(request):
     # 날짜를 'YYYY-MM-DD' 형식으로 포맷합니다
     today_news_date = now.strftime('%Y-%m-%d')
 
-    is_recent_news, max_news_date = sql_statement.sql_dao(request, "sqls_recent_news_date", today_news_date)
+    is_recent_news = sql_statement.sql_dao(request, "sqls_recent_news_date", today_news_date)
 
-    return is_recent_news, today_news_date, max_news_date
+    return is_recent_news, today_news_date
 
 def update_non_eng_type_groupno(request, param):
     detail_info = param

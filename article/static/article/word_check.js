@@ -18,13 +18,16 @@
             $('#sourceUrl').val(selectedValue);
         });
         
+        // Select ����� ���� ����� ������ ����
         $('#wordStatus').change(function() {
             var selectedValue = $(this).val();
             $('#wordStatus').val(selectedValue);
         });
     
+        // ��ư Ŭ�� �̺�Ʈ ó��
         $("#sourceBtn").click(function() {
            sourceUrl = $('#titleList option:selected').val();
+           // �� �ǿ��� URL ����
            window.open(decodeURIComponent(sourceUrl), '_blank');
         });
   
@@ -54,7 +57,9 @@
                     "selected_title": selectedTitle,
                 }),
                 success: function(response) {
+                    // ���������� ���۵� ���� ó��
                     $("#resMessage").val("success(First Finish)");
+                    // ���⿡�� Refresh ��ư Ŭ�� �̺�Ʈ�� Ʈ�����մϴ�
                     $("#refreshBtn").click();
                 }
             });
@@ -64,7 +69,7 @@
         
             if ($('#wordStatus').val() !== 'D') {
                 // Show alert and exit the function
-                alert("test alert");
+                alert("�Ϸ���� ��ȸ �� Ŭ���ϼ���");
                 return;
             }
         
@@ -95,9 +100,6 @@
                     $("#resMessage").val("UnDone Process");
                     // ���⿡�� Refresh ��ư Ŭ�� �̺�Ʈ�� Ʈ�����մϴ�
                     $("#refreshBtn").click();
-                },
-                error: function(xhr, status, error) {
-                    console.error(error);
                 }
             });
         });
@@ -113,6 +115,7 @@
                     "src_title": sourceTitle,
                 },
                 success: function(response) {
+                    // ���������� ���۵� ���� ó��
                     $("#resMessage").val(response.process_cnt + " (" + response.undone_tot_cnt + ") ");
                 }
             });
@@ -129,12 +132,15 @@
                     "src_title": sourceTitle,
                 },
                 success: function(response) {
+                    // ���������� ���۵� ���� ó��
                     $("#resMessage").val(response.result);
+                    // ���⿡�� Refresh ��ư Ŭ�� �̺�Ʈ�� Ʈ�����մϴ�
                     $("#refreshBtn").click();
                 }
             });
         });        
         
+        // group code ��ȸ��ư Ŭ����
         $("#searchBtn").click(function() {
             var searchGrpCd = $('#searchGrpCd option:selected').text();
             
@@ -200,6 +206,7 @@
                 },
                 success: function(response) {
                     $("#resMessage").val("success-delete content");
+                    // ���⿡�� Refresh ��ư Ŭ�� �̺�Ʈ�� Ʈ�����մϴ�
                     $("#searchBtn").click();
                 },
                 error: function(xhr, status, error) {
@@ -208,6 +215,7 @@
             });
         });
         
+        // 'url' ���� �ش��ϴ� option�� value�� ã�� select ��ҿ� �����մϴ�.
         if (sourceUrl) {
             $("#titleList option").each(function() {
                 if ($(this).val() === sourceUrl) {
@@ -216,6 +224,7 @@
             });
         }
         
+        // 'status' ���� �ش��ϴ� option�� value�� ã�� select ��ҿ� �����մϴ�.
         if (sourceStatus) {
             $("#wordStatus option").each(function() {
                 if ($(this).val() === sourceStatus) {
@@ -224,16 +233,19 @@
             });
         }
         
+        // �ܾ� Ŭ�� �̺�Ʈ �ڵ鷯 �߰�
         $('table').on('click', 'td:nth-child(3)', function() {
             var word = $(this).text();
             $('#naverWord').val(word);
             splitTextAndSpeak(word);
         });
         
+        // ������ üũ�ڽ� ����
         $("#checkAll").click(function(){
             $('input[name="rowCheck"]').prop('checked', this.checked);
         });
     
+        // ���� üũ�ڽ� ����
         $('input[name="rowCheck"]').click(function(){
             if ($('input[name="rowCheck"]').length == $('input[name="rowCheck"]:checked').length) {
                 $('#checkAll').prop('checked', true);

@@ -4,6 +4,13 @@
         window.location.href = BASE_URL + 'article/';
     });
 
+    // NEWS SITES 클릭 이벤트
+    $("#newsSites").click(function(e) {
+        e.preventDefault();
+        $("#resMessage").val("NEWS 학습 생성 중입니다.");
+        window.location.href = BASE_URL + 'news_study/';
+    });
+
     // WORD CHECK LIST 클릭 이벤트
     $("#wordCheckList").click(function(e) {
         e.preventDefault();
@@ -145,3 +152,24 @@
         text = text.replace(/\u00A0/g, '_');
         textarea3.value = text;
     }
+
+    // TEST ENGLISH 클릭 이벤트
+    function selectedPageDate(selectElement) {
+        $("#resMessage").val("조회 중입니다.");
+        // 현재 선택된 옵션을 찾습니다.
+        var selectedOption = selectElement.options[selectElement.selectedIndex];
+        // 선택된 옵션에서 data-page_date 속성을 읽어옵니다.
+        var pageDate = selectedOption.getAttribute('data-page_date');
+
+        let back_data = {
+            check:   "none",
+            status:  "C",
+            wdate:   pageDate,
+        };
+        var url = BASE_URL + "article/test-english/?" + $.param(back_data);
+        window.location.href = url;
+    }
+
+    window.onunload = function() {
+        fnLogout();
+    };

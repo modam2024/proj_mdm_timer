@@ -94,7 +94,7 @@ def submit_topic(request):
     word_count = 0
     word_insert_count = 0
 
-    # 데이터베이스 설정, 커서 생성22
+    # 데이터베이스 설정, 커서 생성
     conn, cursor, current_username = create_connection(request)
 
     try:
