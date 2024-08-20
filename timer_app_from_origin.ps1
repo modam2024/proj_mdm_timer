@@ -52,24 +52,6 @@ if (-not [string]::IsNullOrWhiteSpace($added_files)) {
     Write-Host "No new files added."
 }
 
-# 원격에 있지만 로컬에 없는 파일 목록 생성 (missing files 처리)
-Write-Host "Identifying missing files..."
-$missing_files = git ls-tree -r origin/main --name-only | ForEach-Object {
-    if (-not (Test-Path $_)) {
-        $_
-    }
-}
-
-# 원격에 있지만 로컬에 없는 파일을 로컬에 추가
-if (-not [string]::IsNullOrWhiteSpace($missing_files)) {
-    foreach ($file in $missing_files -split "`n") {
-        Write-Host "Adding missing file $file"
-        git checkout origin/main -- $file
-    }
-} else {
-    Write-Host "No missing files."
-}
-
 # 변경된 모든 파일(추가, 삭제, 수정 포함)을 스테이징
 Write-Host "Staging all changes..."
 git add -A
